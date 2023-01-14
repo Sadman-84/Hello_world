@@ -7,8 +7,12 @@
     <title>Document</title>
     <style>
         /*Heading*/
+        *{
+            margin: 0%;
+            font-family: 'work sans';
+        }
         header{
-            background-color: #ff900e;
+            background-color: #ff900e 10%;
             width: 1920px;
             display:flex;
             justify-content: space-between;
@@ -18,20 +22,29 @@
             font-size: 45;
             align-items: center;
         }
-        .head-text{
+        .head-div{
             display: flex;
-            gap: 20vw;
+            gap: 20px;
         }
+        .head-text{
+            font-weight: 500;
+            font-size: 18;
+            color: #424242;
+
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h2 class="heading-1">G3 Architects</h2>
         <div class="head-div">
+           <nav>
             <p class="head-text">Home</p>
             <p class="head-text">About us</p>
             <p class="head-text">Contact us</p>
             <p class="head-text">Log in</p>
+           </nav> 
         </div>
     </header>
 </body>
