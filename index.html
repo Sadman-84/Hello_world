@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G3 Architects</title>
+    <style>
+        /*Heading*/
+        *{
+            margin: 0;
+            font-family: 'work sans';
+        }
+        .top{
+			width: auto;
+            background-color:#ff8f0e2d;
+            width: 100%;
+        }
+        .top:hover{
+            border: 5px solid aqua;
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        
+        .heading-1, .bot-head-prime{
+            font-weight: 700;
+            font-size: 45px;
+        }
+        .head-div{
+            display: flex;
+            gap: 20px;
+
+        }
+        .head-text{
+            font-weight: 500;
+            font-size: 18px;
+            color: #424242;
+
+        }
+        .body-top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        .heading-2{
+            margin: 20px;
+        }
+        .text-2{
+            margin-bottom: 50px;
+            margin: auto;
+            padding: 20px 30px;
+        }
+
+        .btn-primery{
+            color: white;
+            background-color: #ff900e;
+            width: 180px;
+            height: 64px;
+            border: 0 solid ;
+            border-radius: 10px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .banner-img{
+            width: 80%;
+            height: 100%;
+            align-items: center;
+            margin-top: 50px;
+          
+        }
+
+        /*mid div*/
+        .body-mid{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .mid-1{
+            display: grid;
+            margin: 40px 0px;
+            
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        .mid-1:hover{
+            border: 5px solid aqua;
+            border-radius: 10px;
+            border-radius: 10px;
+        }
+        .mid-head{
+            font-size: 40px;
+            font-weight: 700;
+            margin: 40px 0px;
+        }
+        .mid-2{
+            margin: 50px 0px;
+        }
+        .mid-2:hover{
+            border: 5px solid aqua;
+            border-radius: 10px;
+            padding: 0px 40px 30px;
+        }
+        .mh-1{
+            color: #424242;
+        }
+        .mh-3{
+            color: #ff900e;
+        }
+        .mid-text{
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        /*mid bottom*/
+        .mid-bottom{
+            display: flex;
+            margin: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+
+        .mid-bot-1{
+            width: 400px;
+
+        }
+        .mid-bot-1:hover, .mid-bot-2:hover {
+            border: 5px solid aqua;
+            border-radius: 10px;
+        }
+        .mid-bot-2{
+            width: 50%;
+        }
+        .bot-1{
+            width: 100%;
+        }
+        .bot-2{
+            width: 350px;
+            border: 0.1px solid whitesmoke;
+            border-radius: 10px;
+            margin: 20px 0px;
+        }
+        .bot-img{
+            width: 80%;
+        }
+        .mid-btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            font-weight: 700;
+            position: relative;
+
+            left: -30px;
+        }
+        .btn-spn{
+            font-weight: 400;
+            font-size: 20px;
+        }
+        /*foot top*/
+        .footer-top{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10%;
+
+        }
+         .foot-top-2{
+            width: 150px;
+            height: 150px;
+            border: 2px solid #ff900e;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-evenly;
+            align-items: center;
+         
+         }
+         .foot-top-2:hover{
+            border: 5px solid aqua;
+            border-radius: 10px;
+         }
+        .facts{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+         .foot-img{
+            width: 50-px;
+         }
+         /* foot mid*/
+        .sponsor-prime{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 50px 20%;
+        }
+
+        .sponsor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .spn-head{
+            margin: 50px 20% 0px;
+        }
+        .sponsor-logo{
+            filter: grayscale(50);
+        }
+        .sponsor-logo:hover{
+            border: 5px solid aqua;
+            border-radius: 10px;
+            border-radius: 10px;
+        }
+        .foot-end{
+            font-weight: 400;
+            font-size: 20px;
+            width: 80%;
+            height: 100px;
+            margin: 50px 10%;
+            color: #424242;
+            background-color: #ff900e2d;
+            border: 0px;
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+
+
+
+
+
+
+        @media only screen and (max-width: 576px) {
+            .top:hover{
+            border: 5px solid aqua;
+
+        }
+          .mid-1:hover{
+            border: 5px solid aqua;
+            border-radius: 10px;
+            border-radius: 10px;
+          }
+            .header{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+            .body-mid{
+            padding: 20px;
+        }
+            .mid-1{
+            grid: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: centers;
+        }
+        .mid-head{
+            font-size: 20px;
+            font-weight: 400px;
+        }
+        .mid-text{
+            font-size: 15px;
+            font-weight: 300s;
+        }
+            .sponsor-prime{
+            display: flex;
+            flex-direction: column;
+            margin: 30px 10px;
+            align-items: center;
+            justify-content: space-around;
+           } 
+           .footer-top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10%;
+           }
+           .sponsor-logo{
+            width: 80%;
+
+           }
+           .foot-end{
+            padding: 20px 30px;
+           }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="header">
+        <h2 class="heading-1">G3 Architects</h2>
+        <div class="head-div">
+            <p class="head-text">Home</p>
+            <p class="head-text">About us</p>
+            <p class="head-text">Contact us</p>
+            <p class="head-text">Log in</p>
+        </div>
+        </div>
+    <div class="body-top">
+    <h1 class="heading-2">Brand New </h1><h1 class="heading-2"> Group of Architects</h1>
+	<p class="text-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in</p> <p class="text-2">some form, by injected humour, or randomised words which don't look even</p>
+    <img class="banner-img" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/banner.png">
+    </div>
+    </div>
+    <div class="body-mid">
+        <div class="mid-1"> 
+            <img src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/team1.png" class="mid-img">
+            <img src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/team2.png" class="mid-img">
+            <img src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/team3.png" class="mid-img">
+            <img src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/team4.png" class="mid-img"> 
+        </div>
+        <div class="mid-2">
+            <h2 class="mid-head">
+                <span class="mh-1">Quick list</span>
+                <span class="mh-2">of our</span><br>
+                <span class="mh-3">Features</span>
+            </h2>
+            <p class="mid-text">There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration in some form, by injected humour, <br> or randomised words which don't look even</p>
+            <button class="btn-primery">explore more</button>
+        </div>
+    </div>
+    <div class="mid-bottom">
+        <div class="mid-bot-1">
+           <div class="bot-1">
+            <h2 class="bot-head-prime">Features you will love & enjoy</h2>
+           <p class="bot-text">There are many variations of passages of Lorem Ipsum available, but the 
+            majority have suffered alteration in some form, by injected humour, or 
+            randomised words which don't look even</p>
+        </div>
+           <div class="bot-2">
+            <h2 class="bot-head">Dexktop & Mobile Version</h2>
+           <p class="bot-text">There are many variations of passages of Lorem Ipsum available, 
+            but the majority have suffered alteration in some form, by 
+            injected humour, or randomised...........</p>
+        </div>
+           <div class="bot-2">
+            <h2 class="bot-head">Drag & Drop Builder</h2>
+           <p class="bot-text">There are many variations of passages of Lorem Ipsum available, 
+            but the majority have suffered alteration in some form, by 
+            injected humour, or randomised...........</p>
+        </div>
+           <div class="bot-2">
+            <h2 class="bot-head">Awesome Modern Design</h2>
+           <p class="bot-text">There are many variations of passages of Lorem Ipsum available, 
+            but the majority have suffered alteration in some form, by 
+            injected humour, or randomised...........</p>
+        </div>
+           <div class="bot-2">
+            <h2 class="bot-head">Super Easy to Edit</h2>
+           <p class="bot-text">There are many variations of passages of Lorem Ipsum available, 
+            but the majority have suffered alteration in some form, by 
+            injected humour, or randomised...........</p>
+        </div>
+        </div>
+        <div class="mid-bot-2">
+            <img src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/architect.png" class="bot-img">
+            <button class="btn-primery mid-btn">10+ Year<span class="btn-spn">Experience</span></button>
+        </div>
+    </div>
+    <div class="foot-top-1">
+        <div class="facts">
+
+            <h2 class="foot-head">Some Facts</h2>
+            <p class="foot-text">There are many variations of passages of Lorem Ipsum available, but</p> <p class="text-2"> the majority have suffered alteration.</p>
+    </div>
+    <div class="footer-top">
+    <div class="foot-top-2"><img class="foot-img" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/ribon.png">
+    <h2 class="foot-head">54</h2>
+    <p class="foot-text-2">Awards Winnings</p></div>
+    <div class="foot-top-2"><img class="foot-img" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/projects.png">
+    <h2 class="foot-head">1458</h2>
+    <p class="foot-text-2">Project Finished</p></div>
+    <div class="foot-top-2"><img  class="foot-img"src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/customers.png">
+    <h2 class="foot-head">590</h2>
+    <p class="foot-text-2">Clients Worked</p></div>
+    <div class="foot-top-2"><img class="foot-img" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/email.png">
+    <h2 class="foot-head">22578</h2>
+    <p class="foot-text-2">Email Send</p></div>
+    </div>
+    </div>
+    <div class="foot-mid">
+        <div class="sponsor">
+            <h2 class="spn-head">Our Sponspors</h2>
+            <p class="spn-text">There are many variations of passages of Lorem Ipsum available, but <br>the majority have suffered alteration.</p>
+        </div>
+        <div class="sponsor-prime">
+            <img class="sponsor-logo" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/spotify.png">
+            <img class="sponsor-logo" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/amazon.png">
+            <img class="sponsor-logo" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/google.png">
+            <img class="sponsor-logo" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/telerama.png">
+            <img class="sponsor-logo" src="https://raw.githubusercontent.com/Sadman-84/Hello_world/main/figma.png">
+        </div>
+    </div>
+    <div class="foot-end">
+        <p class="end-text">All rights reserved copyright@2023 startup landing page design</p>
+    </div>
+
+</body>
+</html>
